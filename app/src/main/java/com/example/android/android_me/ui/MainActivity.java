@@ -172,12 +172,7 @@ public class MainActivity extends AppCompatActivity implements MasterListFragmen
 
             // The "Next" button launches a new AndroidMeActivity
             Button nextButton = (Button) findViewById(R.id.next_button);
-            nextButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    startActivity(intent);
-                }
-            });
+            nextButton.setOnClickListener(view -> startActivity(intent));
         }
 
     }
